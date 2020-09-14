@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type"
+	content="text/html"; charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<title>
+		{% block title %}
+		{% endblock %}
+	</title>
+</head>
+<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<h1><a class="navbar-brand" href="{% url 'main' %}">MVLAB</a></h1>
+<!--		<h6><a class="navbar-brand" href="">Temperature</a></h6>
+		<h6><a class="navbar-brand" href="">Davlenie</a></h6>
+		<h6><a class="navbar-brand" href="">MAC address</a></h6>-->
+		<h6><a class="navbar-brand" href="{% url 'name_mac_t' %}">TEmp</a></h6>
+		<h6><a class="navbar-brand" href="{% url 'name_mac_mem' %}">MEMS</a></h6>
+	</nav>
+		{% block content %}
+		{% endblock %}
+</body>
+</html>

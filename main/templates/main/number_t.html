@@ -1,0 +1,13 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+Temperatura Number
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+{%for id in number_t %}
+<a class="lead" href="t{{id}}">datchik # {{id}}</a>
+<br>
+{%endfor%}
+{% endblock %}

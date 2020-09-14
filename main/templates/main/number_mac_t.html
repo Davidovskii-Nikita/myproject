@@ -1,0 +1,14 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+Temperatura Number
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<p>TEmp:</p>
+{%for name in number_mac %}
+<a class="lead" href="{{name.id}}">#{{name.name}}</a>
+<br>
+{%endfor%}
+{% endblock %}

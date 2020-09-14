@@ -1,0 +1,25 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+Temperatura Number
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<div class="table-responsive">
+	<table border="4" class="table table-striped table-sm">
+	<caption>{{mac_name}}</caption>
+	<thead>
+	<tr>
+		<th>VAlue Mems</th>
+		<th>date</th>		
+	</tr>
+	</thead>
+	{% for j in mac %}
+	<tr>
+		<th>{{ j.Value_mem }}</th>
+		<th>{{ j.Time_mem|date:"d-m-Y H:i:s" }}</th>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}
