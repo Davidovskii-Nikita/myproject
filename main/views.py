@@ -22,6 +22,7 @@ def index(request):
 @api_view(["GET","POST"])
 def nkvm(request):
 #	print('1: ',request)
+#	print('2: ',str(request))
 #	print('3: '+str(request.body))
 	k=json.loads(request.body)
 #	print('provEEEEEE: ', k['MAC'])

@@ -1,0 +1,7 @@
+[program:movie]
+command=myproject/myprojectenv/bin/gunicorn myproject.asgi:application -c myproject/cnf/gunicorn.conf.py
+directory=myproject/
+user=root
+autorestart=true
+redirect_stderr=true
+stdout_logfile=myprojectdir/log/debug.log
