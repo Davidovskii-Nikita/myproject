@@ -24,6 +24,7 @@ def nkvm(request):
 #	print('1: ',request)
 #	print('2: ',str(request))
 #	print('3: '+str(request.body))
+	print('длинна: ',str(len(request.body)))
 	k=json.loads(request.body)
 #	print('provEEEEEE: ', k['MAC'])
 	mac_prob=k['MAC']

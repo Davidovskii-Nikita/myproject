@@ -257,3 +257,597 @@ IndexError: list index out of range
 [2020-09-15 20:18:40 +0000] [51097] [INFO] Listening at: http://127.0.0.1:8000 (51097)
 [2020-09-15 20:18:40 +0000] [51097] [INFO] Using worker: sync
 [2020-09-15 20:18:40 +0000] [51099] [INFO] Booting worker with pid: 51099
+[2020-09-17 17:02:29 +0000] [51097] [INFO] Handling signal: term
+[2020-09-17 17:02:29 +0000] [51099] [INFO] Worker exiting (pid: 51099)
+[2020-09-17 17:02:29 +0000] [51097] [INFO] Shutting down: Master
+[2020-09-17 19:09:45 +0000] [76721] [INFO] Starting gunicorn 20.0.4
+[2020-09-17 19:09:45 +0000] [76721] [INFO] Listening at: http://127.0.0.1:8000 (76721)
+[2020-09-17 19:09:45 +0000] [76721] [INFO] Using worker: sync
+[2020-09-17 19:09:45 +0000] [76723] [INFO] Booting worker with pid: 76723
+[2020-09-21 07:05:14 +0000] [76721] [INFO] Handling signal: term
+[2020-09-21 07:05:14 +0000] [76723] [INFO] Worker exiting (pid: 76723)
+[2020-09-21 07:05:14 +0000] [76721] [INFO] Shutting down: Master
+[2020-09-21 08:16:47 +0000] [111102] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:16:47 +0000] [111102] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:47 +0000] [111102] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:48 +0000] [111102] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:48 +0000] [111102] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:49 +0000] [111102] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:49 +0000] [111102] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:50 +0000] [111102] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:50 +0000] [111102] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:51 +0000] [111102] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:51 +0000] [111102] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:52 +0000] [111102] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:16:55 +0000] [111106] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:16:55 +0000] [111106] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:55 +0000] [111106] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:56 +0000] [111106] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:56 +0000] [111106] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:57 +0000] [111106] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:57 +0000] [111106] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:58 +0000] [111106] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:58 +0000] [111106] [ERROR] Retrying in 1 second.
+[2020-09-21 08:16:59 +0000] [111106] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:16:59 +0000] [111106] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:00 +0000] [111106] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:17:02 +0000] [111117] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:17:02 +0000] [111117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:02 +0000] [111117] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:03 +0000] [111117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:03 +0000] [111117] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:04 +0000] [111117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:04 +0000] [111117] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:05 +0000] [111117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:05 +0000] [111117] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:06 +0000] [111117] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:06 +0000] [111117] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:07 +0000] [111117] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:17:37 +0000] [111136] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:17:37 +0000] [111136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:37 +0000] [111136] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:38 +0000] [111136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:38 +0000] [111136] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:39 +0000] [111136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:39 +0000] [111136] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:40 +0000] [111136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:40 +0000] [111136] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:41 +0000] [111136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:41 +0000] [111136] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:42 +0000] [111136] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:17:44 +0000] [111139] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:17:44 +0000] [111139] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:44 +0000] [111139] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:45 +0000] [111139] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:45 +0000] [111139] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:46 +0000] [111139] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:46 +0000] [111139] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:47 +0000] [111139] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:47 +0000] [111139] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:48 +0000] [111139] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:48 +0000] [111139] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:49 +0000] [111139] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:17:52 +0000] [111148] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:17:52 +0000] [111148] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:52 +0000] [111148] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:53 +0000] [111148] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:53 +0000] [111148] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:54 +0000] [111148] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:54 +0000] [111148] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:55 +0000] [111148] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:55 +0000] [111148] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:56 +0000] [111148] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:17:56 +0000] [111148] [ERROR] Retrying in 1 second.
+[2020-09-21 08:17:57 +0000] [111148] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:12 +0000] [111163] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:12 +0000] [111163] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:12 +0000] [111163] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:13 +0000] [111163] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:13 +0000] [111163] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:14 +0000] [111163] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:14 +0000] [111163] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:15 +0000] [111163] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:15 +0000] [111163] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:16 +0000] [111163] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:16 +0000] [111163] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:17 +0000] [111163] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:19 +0000] [111165] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:19 +0000] [111165] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:19 +0000] [111165] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:20 +0000] [111165] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:20 +0000] [111165] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:21 +0000] [111165] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:21 +0000] [111165] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:22 +0000] [111165] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:22 +0000] [111165] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:23 +0000] [111165] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:23 +0000] [111165] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:24 +0000] [111165] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:27 +0000] [111168] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:27 +0000] [111168] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:27 +0000] [111168] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:28 +0000] [111168] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:28 +0000] [111168] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:29 +0000] [111168] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:29 +0000] [111168] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:30 +0000] [111168] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:30 +0000] [111168] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:31 +0000] [111168] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:31 +0000] [111168] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:32 +0000] [111168] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:34 +0000] [111170] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:34 +0000] [111170] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:34 +0000] [111170] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:35 +0000] [111170] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:35 +0000] [111170] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:36 +0000] [111170] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:36 +0000] [111170] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:37 +0000] [111170] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:37 +0000] [111170] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:38 +0000] [111170] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:38 +0000] [111170] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:39 +0000] [111170] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:41 +0000] [111172] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:41 +0000] [111172] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:41 +0000] [111172] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:42 +0000] [111172] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:42 +0000] [111172] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:43 +0000] [111172] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:43 +0000] [111172] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:44 +0000] [111172] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:44 +0000] [111172] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:45 +0000] [111172] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:45 +0000] [111172] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:46 +0000] [111172] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:48 +0000] [111179] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:48 +0000] [111179] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:48 +0000] [111179] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:49 +0000] [111179] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:49 +0000] [111179] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:50 +0000] [111179] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:50 +0000] [111179] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:51 +0000] [111179] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:51 +0000] [111179] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:52 +0000] [111179] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:52 +0000] [111179] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:53 +0000] [111179] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:18:56 +0000] [111181] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:18:56 +0000] [111181] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:56 +0000] [111181] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:57 +0000] [111181] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:57 +0000] [111181] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:58 +0000] [111181] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:58 +0000] [111181] [ERROR] Retrying in 1 second.
+[2020-09-21 08:18:59 +0000] [111181] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:18:59 +0000] [111181] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:00 +0000] [111181] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:00 +0000] [111181] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:01 +0000] [111181] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:03 +0000] [111184] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:03 +0000] [111184] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:03 +0000] [111184] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:04 +0000] [111184] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:04 +0000] [111184] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:05 +0000] [111184] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:05 +0000] [111184] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:06 +0000] [111184] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:06 +0000] [111184] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:07 +0000] [111184] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:07 +0000] [111184] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:08 +0000] [111184] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:10 +0000] [111188] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:10 +0000] [111188] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:10 +0000] [111188] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:11 +0000] [111188] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:11 +0000] [111188] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:12 +0000] [111188] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:12 +0000] [111188] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:13 +0000] [111188] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:13 +0000] [111188] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:14 +0000] [111188] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:14 +0000] [111188] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:15 +0000] [111188] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:17 +0000] [111190] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:17 +0000] [111190] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:17 +0000] [111190] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:18 +0000] [111190] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:18 +0000] [111190] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:19 +0000] [111190] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:19 +0000] [111190] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:20 +0000] [111190] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:20 +0000] [111190] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:21 +0000] [111190] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:21 +0000] [111190] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:22 +0000] [111190] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:25 +0000] [111193] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:25 +0000] [111193] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:25 +0000] [111193] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:26 +0000] [111193] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:26 +0000] [111193] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:27 +0000] [111193] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:27 +0000] [111193] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:28 +0000] [111193] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:28 +0000] [111193] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:29 +0000] [111193] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:29 +0000] [111193] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:30 +0000] [111193] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:32 +0000] [111195] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:32 +0000] [111195] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:32 +0000] [111195] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:33 +0000] [111195] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:33 +0000] [111195] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:34 +0000] [111195] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:34 +0000] [111195] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:35 +0000] [111195] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:35 +0000] [111195] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:36 +0000] [111195] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:36 +0000] [111195] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:37 +0000] [111195] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:39 +0000] [111198] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:39 +0000] [111198] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:39 +0000] [111198] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:40 +0000] [111198] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:40 +0000] [111198] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:41 +0000] [111198] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:41 +0000] [111198] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:42 +0000] [111198] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:42 +0000] [111198] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:43 +0000] [111198] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:43 +0000] [111198] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:44 +0000] [111198] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:46 +0000] [111202] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:46 +0000] [111202] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:46 +0000] [111202] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:47 +0000] [111202] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:47 +0000] [111202] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:48 +0000] [111202] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:48 +0000] [111202] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:49 +0000] [111202] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:49 +0000] [111202] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:50 +0000] [111202] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:50 +0000] [111202] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:51 +0000] [111202] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:19:54 +0000] [111204] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:19:54 +0000] [111204] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:54 +0000] [111204] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:55 +0000] [111204] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:55 +0000] [111204] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:56 +0000] [111204] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:56 +0000] [111204] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:57 +0000] [111204] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:57 +0000] [111204] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:58 +0000] [111204] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:19:58 +0000] [111204] [ERROR] Retrying in 1 second.
+[2020-09-21 08:19:59 +0000] [111204] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:20:01 +0000] [111206] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:20:01 +0000] [111206] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:01 +0000] [111206] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:02 +0000] [111206] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:02 +0000] [111206] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:03 +0000] [111206] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:03 +0000] [111206] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:04 +0000] [111206] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:04 +0000] [111206] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:05 +0000] [111206] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:05 +0000] [111206] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:06 +0000] [111206] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:20:07 +0000] [111215] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:20:07 +0000] [111215] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:07 +0000] [111215] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:08 +0000] [111215] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:08 +0000] [111215] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:09 +0000] [111215] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:09 +0000] [111215] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:10 +0000] [111215] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:10 +0000] [111215] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:11 +0000] [111215] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:11 +0000] [111215] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:12 +0000] [111215] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:20:31 +0000] [111228] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:20:31 +0000] [111228] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:31 +0000] [111228] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:32 +0000] [111228] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:32 +0000] [111228] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:33 +0000] [111228] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:33 +0000] [111228] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:34 +0000] [111228] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:34 +0000] [111228] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:35 +0000] [111228] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:35 +0000] [111228] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:36 +0000] [111228] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:20:38 +0000] [111238] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:20:38 +0000] [111238] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:38 +0000] [111238] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:39 +0000] [111238] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:39 +0000] [111238] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:40 +0000] [111238] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:40 +0000] [111238] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:41 +0000] [111238] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:41 +0000] [111238] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:42 +0000] [111238] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:42 +0000] [111238] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:43 +0000] [111238] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:20:45 +0000] [111243] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:20:45 +0000] [111243] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:45 +0000] [111243] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:46 +0000] [111243] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:46 +0000] [111243] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:47 +0000] [111243] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:47 +0000] [111243] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:48 +0000] [111243] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:48 +0000] [111243] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:49 +0000] [111243] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:49 +0000] [111243] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:50 +0000] [111243] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 08:20:52 +0000] [111245] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 08:20:52 +0000] [111245] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:52 +0000] [111245] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:53 +0000] [111245] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:53 +0000] [111245] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:54 +0000] [111245] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:54 +0000] [111245] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:55 +0000] [111245] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:55 +0000] [111245] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:56 +0000] [111245] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-21 08:20:56 +0000] [111245] [ERROR] Retrying in 1 second.
+[2020-09-21 08:20:57 +0000] [111245] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-21 10:19:48 +0000] [113223] [INFO] Starting gunicorn 20.0.4
+[2020-09-21 10:19:48 +0000] [113223] [INFO] Listening at: http://127.0.0.1:8000 (113223)
+[2020-09-21 10:19:48 +0000] [113223] [INFO] Using worker: sync
+[2020-09-21 10:19:48 +0000] [113225] [INFO] Booting worker with pid: 113225
+[2020-09-22 07:34:00 +0000] [113223] [INFO] Handling signal: term
+[2020-09-22 07:34:00 +0000] [113225] [INFO] Worker exiting (pid: 113225)
+[2020-09-22 07:34:01 +0000] [113223] [INFO] Shutting down: Master
+[2020-09-22 07:34:24 +0000] [122750] [INFO] Starting gunicorn 20.0.4
+[2020-09-22 07:34:24 +0000] [122750] [INFO] Listening at: http://127.0.0.1:8000 (122750)
+[2020-09-22 07:34:24 +0000] [122750] [INFO] Using worker: sync
+[2020-09-22 07:34:25 +0000] [122752] [INFO] Booting worker with pid: 122752
+[2020-09-22 07:54:37 +0000] [122750] [INFO] Handling signal: term
+[2020-09-22 07:54:37 +0000] [122752] [INFO] Worker exiting (pid: 122752)
+[2020-09-22 07:54:37 +0000] [122750] [INFO] Shutting down: Master
+[2020-09-22 07:54:56 +0000] [122996] [INFO] Starting gunicorn 20.0.4
+[2020-09-22 07:54:56 +0000] [122996] [INFO] Listening at: http://127.0.0.1:8000 (122996)
+[2020-09-22 07:54:56 +0000] [122996] [INFO] Using worker: sync
+[2020-09-22 07:54:56 +0000] [122998] [INFO] Booting worker with pid: 122998
+[2020-09-22 07:55:06 +0000] [122996] [INFO] Handling signal: term
+[2020-09-22 07:55:06 +0000] [122998] [INFO] Worker exiting (pid: 122998)
+[2020-09-22 07:55:06 +0000] [122996] [INFO] Shutting down: Master
+[2020-09-22 07:55:52 +0000] [123045] [INFO] Starting gunicorn 20.0.4
+[2020-09-22 07:55:52 +0000] [123045] [INFO] Listening at: http://127.0.0.1:8000 (123045)
+[2020-09-22 07:55:52 +0000] [123045] [INFO] Using worker: sync
+[2020-09-22 07:55:52 +0000] [123047] [INFO] Booting worker with pid: 123047
+[2020-09-23 15:52:47 +0000] [123045] [INFO] Handling signal: term
+[2020-09-23 15:52:47 +0000] [123047] [INFO] Worker exiting (pid: 123047)
+[2020-09-23 15:52:48 +0000] [123045] [INFO] Shutting down: Master
+[2020-09-23 18:13:45 +0000] [146334] [INFO] Starting gunicorn 20.0.4
+[2020-09-23 18:13:45 +0000] [146334] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:45 +0000] [146334] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:46 +0000] [146334] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:46 +0000] [146334] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:47 +0000] [146334] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:47 +0000] [146334] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:48 +0000] [146334] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:48 +0000] [146334] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:49 +0000] [146334] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:49 +0000] [146334] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:50 +0000] [146334] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-23 18:13:52 +0000] [146343] [INFO] Starting gunicorn 20.0.4
+[2020-09-23 18:13:52 +0000] [146343] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:52 +0000] [146343] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:53 +0000] [146343] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:53 +0000] [146343] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:54 +0000] [146343] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:54 +0000] [146343] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:55 +0000] [146343] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:55 +0000] [146343] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:56 +0000] [146343] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:13:56 +0000] [146343] [ERROR] Retrying in 1 second.
+[2020-09-23 18:13:57 +0000] [146343] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-23 18:14:11 +0000] [146353] [INFO] Starting gunicorn 20.0.4
+[2020-09-23 18:14:11 +0000] [146353] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:11 +0000] [146353] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:12 +0000] [146353] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:12 +0000] [146353] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:13 +0000] [146353] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:13 +0000] [146353] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:14 +0000] [146353] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:14 +0000] [146353] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:15 +0000] [146353] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:15 +0000] [146353] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:16 +0000] [146353] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-23 18:14:18 +0000] [146357] [INFO] Starting gunicorn 20.0.4
+[2020-09-23 18:14:18 +0000] [146357] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:18 +0000] [146357] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:19 +0000] [146357] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:19 +0000] [146357] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:20 +0000] [146357] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:20 +0000] [146357] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:21 +0000] [146357] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:21 +0000] [146357] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:22 +0000] [146357] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-23 18:14:22 +0000] [146357] [ERROR] Retrying in 1 second.
+[2020-09-23 18:14:23 +0000] [146357] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:15:08 +0000] [153705] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:15:08 +0000] [153705] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:08 +0000] [153705] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:09 +0000] [153705] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:09 +0000] [153705] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:10 +0000] [153705] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:10 +0000] [153705] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:11 +0000] [153705] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:11 +0000] [153705] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:12 +0000] [153705] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:12 +0000] [153705] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:13 +0000] [153705] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:15:15 +0000] [153707] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:15:15 +0000] [153707] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:15 +0000] [153707] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:16 +0000] [153707] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:16 +0000] [153707] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:17 +0000] [153707] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:17 +0000] [153707] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:18 +0000] [153707] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:18 +0000] [153707] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:19 +0000] [153707] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:15:19 +0000] [153707] [ERROR] Retrying in 1 second.
+[2020-09-24 08:15:20 +0000] [153707] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:16:07 +0000] [153820] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:16:07 +0000] [153820] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:07 +0000] [153820] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:08 +0000] [153820] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:08 +0000] [153820] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:09 +0000] [153820] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:09 +0000] [153820] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:10 +0000] [153820] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:10 +0000] [153820] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:11 +0000] [153820] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:11 +0000] [153820] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:12 +0000] [153820] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:16:15 +0000] [153838] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:16:15 +0000] [153838] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:15 +0000] [153838] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:16 +0000] [153838] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:16 +0000] [153838] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:17 +0000] [153838] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:17 +0000] [153838] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:18 +0000] [153838] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:18 +0000] [153838] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:19 +0000] [153838] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:16:19 +0000] [153838] [ERROR] Retrying in 1 second.
+[2020-09-24 08:16:20 +0000] [153838] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:09 +0000] [154107] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:09 +0000] [154107] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:09 +0000] [154107] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:10 +0000] [154107] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:10 +0000] [154107] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:11 +0000] [154107] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:11 +0000] [154107] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:12 +0000] [154107] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:12 +0000] [154107] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:13 +0000] [154107] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:13 +0000] [154107] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:14 +0000] [154107] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:14 +0000] [154111] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:14 +0000] [154111] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:14 +0000] [154111] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:15 +0000] [154111] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:15 +0000] [154111] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:16 +0000] [154111] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:16 +0000] [154111] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:17 +0000] [154111] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:17 +0000] [154111] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:18 +0000] [154111] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:18 +0000] [154111] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:19 +0000] [154111] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:22 +0000] [154119] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:22 +0000] [154119] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:22 +0000] [154119] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:23 +0000] [154119] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:23 +0000] [154119] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:24 +0000] [154119] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:24 +0000] [154119] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:25 +0000] [154119] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:25 +0000] [154119] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:26 +0000] [154119] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:26 +0000] [154119] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:27 +0000] [154119] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:29 +0000] [154128] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:29 +0000] [154128] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:29 +0000] [154128] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:30 +0000] [154128] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:30 +0000] [154128] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:31 +0000] [154128] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:31 +0000] [154128] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:32 +0000] [154128] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:32 +0000] [154128] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:33 +0000] [154128] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:33 +0000] [154128] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:34 +0000] [154128] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:36 +0000] [154134] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:36 +0000] [154134] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:36 +0000] [154134] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:37 +0000] [154134] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:37 +0000] [154134] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:38 +0000] [154134] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:38 +0000] [154134] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:39 +0000] [154134] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:39 +0000] [154134] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:40 +0000] [154134] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:40 +0000] [154134] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:41 +0000] [154134] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:43 +0000] [154136] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:43 +0000] [154136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:43 +0000] [154136] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:44 +0000] [154136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:44 +0000] [154136] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:45 +0000] [154136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:45 +0000] [154136] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:46 +0000] [154136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:46 +0000] [154136] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:47 +0000] [154136] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:47 +0000] [154136] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:48 +0000] [154136] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:50 +0000] [154145] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:50 +0000] [154145] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:50 +0000] [154145] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:51 +0000] [154145] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:51 +0000] [154145] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:52 +0000] [154145] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:52 +0000] [154145] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:53 +0000] [154145] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:53 +0000] [154145] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:54 +0000] [154145] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:54 +0000] [154145] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:55 +0000] [154145] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:29:58 +0000] [154153] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:29:58 +0000] [154153] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:58 +0000] [154153] [ERROR] Retrying in 1 second.
+[2020-09-24 08:29:59 +0000] [154153] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:29:59 +0000] [154153] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:00 +0000] [154153] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:00 +0000] [154153] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:01 +0000] [154153] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:01 +0000] [154153] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:02 +0000] [154153] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:02 +0000] [154153] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:03 +0000] [154153] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2020-09-24 08:30:05 +0000] [154161] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 08:30:05 +0000] [154161] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:05 +0000] [154161] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:06 +0000] [154161] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:06 +0000] [154161] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:07 +0000] [154161] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:07 +0000] [154161] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:08 +0000] [154161] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2020-09-24 08:30:08 +0000] [154161] [ERROR] Retrying in 1 second.
+[2020-09-24 08:30:09 +0000] [154161] [INFO] Listening at: http://127.0.0.1:8000 (154161)
+[2020-09-24 08:30:09 +0000] [154161] [INFO] Using worker: sync
+[2020-09-24 08:30:09 +0000] [154177] [INFO] Booting worker with pid: 154177
+[2020-09-25 07:24:32 +0000] [154161] [INFO] Handling signal: term
+[2020-09-25 07:24:32 +0000] [154177] [INFO] Worker exiting (pid: 154177)
+[2020-09-25 07:24:33 +0000] [154161] [INFO] Shutting down: Master
+[2020-09-25 07:24:33 +0000] [165186] [INFO] Starting gunicorn 20.0.4
+[2020-09-25 07:24:33 +0000] [165186] [INFO] Listening at: http://127.0.0.1:8000 (165186)
+[2020-09-25 07:24:33 +0000] [165186] [INFO] Using worker: sync
+[2020-09-25 07:24:33 +0000] [165188] [INFO] Booting worker with pid: 165188
+[2020-09-25 07:47:46 +0000] [165186] [INFO] Handling signal: term
+[2020-09-25 07:47:46 +0000] [165188] [INFO] Worker exiting (pid: 165188)
+[2020-09-25 07:47:46 +0000] [165186] [INFO] Shutting down: Master
+[2020-09-25 07:48:02 +0000] [165644] [INFO] Starting gunicorn 20.0.4
+[2020-09-25 07:48:02 +0000] [165644] [INFO] Listening at: http://127.0.0.1:8000 (165644)
+[2020-09-25 07:48:02 +0000] [165644] [INFO] Using worker: sync
+[2020-09-25 07:48:02 +0000] [165646] [INFO] Booting worker with pid: 165646
+[2020-09-25 07:49:46 +0000] [165644] [INFO] Handling signal: term
+[2020-09-25 07:49:46 +0000] [165646] [INFO] Worker exiting (pid: 165646)
+[2020-09-25 07:49:47 +0000] [165644] [INFO] Shutting down: Master
+[2020-09-25 07:50:28 +0000] [165797] [INFO] Starting gunicorn 20.0.4
+[2020-09-25 07:50:28 +0000] [165797] [INFO] Listening at: http://127.0.0.1:8000 (165797)
+[2020-09-25 07:50:28 +0000] [165797] [INFO] Using worker: sync
+[2020-09-25 07:50:28 +0000] [165799] [INFO] Booting worker with pid: 165799
+[2020-09-25 07:55:07 +0000] [165797] [INFO] Handling signal: term
+[2020-09-25 07:55:07 +0000] [165799] [INFO] Worker exiting (pid: 165799)
+[2020-09-25 07:55:07 +0000] [165797] [INFO] Shutting down: Master
+[2020-09-25 07:57:56 +0000] [166104] [INFO] Starting gunicorn 20.0.4
+[2020-09-25 07:57:56 +0000] [166104] [INFO] Listening at: http://127.0.0.1:8000 (166104)
+[2020-09-25 07:57:56 +0000] [166104] [INFO] Using worker: sync
+[2020-09-25 07:57:56 +0000] [166106] [INFO] Booting worker with pid: 166106
