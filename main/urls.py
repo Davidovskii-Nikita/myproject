@@ -13,6 +13,9 @@ urlpatterns = [
 	path('nkvm',views.nkvm),
 	path('number_mac_t/', views.number_mac_t, name='name_mac_t'),
 	path('number_mac_mem/', views.number_mac_mem, name='name_mac_mem'),
-	path('number_mac_t/<int:mac_id>', views.mac_rub_t),
-	path('number_mac_mem/<int:mac_id>', views.mac_rub_mem)
+	path('number_mac_t/<int:mac_id>/', views.mac_rub_t),
+	path('number_mac_mem/<int:mac_id>/', views.mac_rub_mem),
+	path('gt<int:mac_id>',views.graf_t),
+	path('gmem<int:mac_id>',views.graf_mem),
+	path('vib',views.vib),
 ]

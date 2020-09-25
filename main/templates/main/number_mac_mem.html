@@ -8,7 +8,7 @@ Temperatura Number
 <br>
 <p>MEMS:</p>
 {%for name in number_mac %}
-<a class="lead" href="{{name.id}}">#{{name.name}}</a>
+<a class="lead" href="{{name.id}}">#{{name.name}}</a><a class="lead" href="/gmem{{name.id}}">#Тренды</a>
 <br>
 {%endfor%}
 {% endblock %}
