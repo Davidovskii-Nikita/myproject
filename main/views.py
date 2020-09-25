@@ -10,6 +10,7 @@ from .models import data_esp_mem
 from rest_framework.decorators import api_view
 import json
 import psycopg2
+import datetime
 #from django.views.decorators.http import require_http_methods
 
 
@@ -98,10 +99,11 @@ from django.db.models import Max
 def number_mac_t(request):
 	number_mac=mac_adr.objects.all()
 	idl=range(len(number_mac))
+#	id = mac[0].id
 #	num={}
 #	for nam in range(i):
 #		num[nam]=str(number_mac[nam])
-	context={'number_mac':number_mac, 'idl':idl}
+	context={'number_mac':number_mac, 'idl':idl, 'id':id}
 	return render(request, 'main/number_mac_t.html', context)
 
 def number_mac_mem(request):
@@ -116,10 +118,46 @@ def number_mac_mem(request):
 def mac_rub_t(request,mac_id):
 	mac=data_esp_t.objects.filter(mac_adr=mac_id).order_by('-Time_t')
 	mac_name=mac[0].mac_adr
-	return render(request, 'main/mac_rub_t.html', {'mac':mac, 'mac_name': mac_name})
+	id=mac[0].id
+	return render(request, 'main/mac_rub_t.html', {'mac':mac, 'mac_name': mac_name, 'id':id})
 
 def mac_rub_mem(request,mac_id):
 	mac=data_esp_mem.objects.filter(mac_adr=mac_id).order_by('-Time_mem')
 	mac_name=mac[0].mac_adr
 	return render(request, 'main/mac_rub_mem.html', {'mac':mac, 'mac_name': mac_name})
+
+def graf_t(request,mac_id):
+	mac = data_esp_t.objects.filter(mac_adr=mac_id).order_by('Time_t')
+	dlin=len(mac)
+	time=[i.Time_t.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
+	value=[i.Value_t for i in mac]
+	mac_name = mac[0].mac_adr
+	return render(request, 'main/graf.html', {'time':time, 'value':value})
+
+def graf_mem(request,mac_id):
+	mac = data_esp_mem.objects.filter(mac_adr=mac_id).order_by('Time_mem')
+	dlin=len(mac)
+	time=[i.Time_mem.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
+	value=[i.Value_mem for i in mac]
+	mac_name = mac[0].mac_adr
+	return render(request, 'main/graf.html', {'time':time, 'value':value})
+
+
+#######################
+def vib(request):
+	mac = data_esp_t.objects.order_by('-Time_t')
+	dlin=len(mac)
+	time=[i.Time_t.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
+	value=[i.Value_t for i in mac]
+	k='{x:'
+	for i in mac:
+		k=k+repr(i.Time_t)+',y:'+str(i.Value_t)
+		if i!=mac[len(mac)-1]:
+			k=k+'},{x:'
+	k=k+'}'
+	k=json.dumps(k)
+	print(k)
+	mac_name = mac[0].mac_adr
+	return render(request, 'main/vib.html', {'time':time, 'value': value, 'k':k})
+
 
