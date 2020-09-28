@@ -5,62 +5,99 @@ Graff
 {% block content %}
     <br>
     <br>
+    <br>
 
-          <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
 
-
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<div id="container" style="height: 400px; min-width: 310px"></div>
     <script>
-      feather.replace()
-    </script>
+        Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/large-dataset.json', function (data) {
 
-    <!-- Graphs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-      let date='{{ time|escapejs }}'.replace(/[\[\]']+/g,'');
-      let date1=date.split(', ');
-      dt='{{ value|escapejs }}'.replace(/[\[\]']+/g,'');
-      let dt1=dt.split(', ');
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: date1,
-          datasets: [{
-            data: dt1,
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
+    // Create a timer
+    var start = +new Date();
+
+    // Create the chart
+    let arr = [];
+    let vrem = '{{ x|escapejs }}'.replace(/[\[\]']+/g,'');
+    vrem = vrem.split(', ');
+    let tem = '{{ y|escapejs }}'.replace(/[\[\]']+/g,'');
+    tem = tem.split(', ');
+    for (let i = 0; i < Number('{{ dlin }}'); i++) {
+        let mas=[];
+        mas.push(Number(vrem[i])*1000);
+        mas.push(Number(tem[i]));
+        arr.push(mas);
+    }
+
+    Highcharts.stockChart('container', {
+        chart: {
+            events: {
+                load: function () {
+                    if (!window.TestController) {
+                        this.setTitle(null, {
+                            text: 'Built chart in ' + (new Date() - start) + 'ms'
+                        });
+                    }
+                }
+            },
+            zoomType: 'x'
         },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
-    </script>
 
+        rangeSelector: {
+
+            buttons: [{
+                type: 'day',
+                count: 3,
+                text: '3d'
+            }, {
+                type: 'week',
+                count: 1,
+                text: '1w'
+            }, {
+                type: 'month',
+                count: 1,
+                text: '1m'
+            }, {
+                type: 'month',
+                count: 6,
+                text: '6m'
+            }, {
+                type: 'year',
+                count: 1,
+                text: '1y'
+            }, {
+                type: 'all',
+                text: 'All'
+            }],
+            selected: 3
+        },
+
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            }
+        },
+
+        title: {
+            text: 'Hourly temperatures in Vik i Sogn, Norway, 2009-2017'
+        },
+
+        subtitle: {
+            text: 'Built chart in ...' // dummy text to reserve space for dynamic subtitle
+        },
+        //var DataArr=[[{x:1575121202000,y:9},{x:1575121212000,y:15},{x:1575121222000,y:2},{x:1575121232000,y:11}
+        series: [{
+            name: 'Temperature',
+            data: arr,//[[1575121202000,9],[1575121212000,15],[1575121222000,2],[1575121232000,11]],
+            tooltip: {
+                valueDecimals: 1,
+                valueSuffix: '°C'
+            }
+        }]
+
+    });
+});
+</script>
 {% endblock %}

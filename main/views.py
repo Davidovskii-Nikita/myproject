@@ -11,6 +11,8 @@ from rest_framework.decorators import api_view
 import json
 import psycopg2
 import datetime
+import time
+from datetime import timezone
 #from django.views.decorators.http import require_http_methods
 
 
@@ -132,7 +134,20 @@ def graf_t(request,mac_id):
 	time=[i.Time_t.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
 	value=[i.Value_t for i in mac]
 	mac_name = mac[0].mac_adr
-	return render(request, 'main/graf.html', {'time':time, 'value':value})
+	k=''
+	x=[]
+	y=[]
+
+	for i in mac:
+		x.append(i.Time_t.timestamp())
+		y.append(i.Value_t)
+		k=k+'{'+str(i.Time_t.timestamp())+','+str(i.Value_t)+'}'
+		if i!= mac[len(mac)-1]:
+			k=k+','
+	dlin=len(x)
+	print(x)
+	print('asd: ',y)
+	return render(request, 'main/graf.html', {'time':time, 'value':value, 'k':k, 'x':x, 'y':y, 'dlin':dlin})
 
 def graf_mem(request,mac_id):
 	mac = data_esp_mem.objects.filter(mac_adr=mac_id).order_by('Time_mem')
@@ -149,12 +164,11 @@ def vib(request):
 	dlin=len(mac)
 	time=[i.Time_t.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
 	value=[i.Value_t for i in mac]
-	k='{x:'
+	k=''
 	for i in mac:
-		k=k+repr(i.Time_t)+',y:'+str(i.Value_t)
+		k=k+repr(i.Time_t)+','+str(i.Value_t)
 		if i!=mac[len(mac)-1]:
-			k=k+'},{x:'
-	k=k+'}'
+			k=k+' , '
 	k=json.dumps(k)
 	print(k)
 	mac_name = mac[0].mac_adr
