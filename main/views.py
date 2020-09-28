@@ -11,7 +11,6 @@ from rest_framework.decorators import api_view
 import json
 import psycopg2
 import datetime
-import request
 #from django.views.decorators.http import require_http_methods
 
 
@@ -19,12 +18,7 @@ import request
 
 def index(request):
 #	print('request: '+str(request.body))
-#	vr=data_esp_mem.objects.filter(mac_adr=8).order_by('Time_mem')
-#	k=''
-#	for i in vr:
-#		k=k+str(i.Time_mem)+'%'
-#	rest=request.get('',data=k)
-	return render(request,'main/index.html')
+	var=data_esp_mem.objects.filter(mac_adr=8).order_by(' return render(request,'main/index.html')
 
 @api_view(["GET","POST"])
 def nkvm(request):
@@ -37,7 +31,7 @@ def nkvm(request):
 	mac_prob=k['MAC']
 	conn = psycopg2.connect(dbname='myproject',
    		user='myprojectuser',
-    	password='password',
+	    	password='password',
 	   	host='localhost')
 	cur = conn.cursor()
 	lengs_t=len(k['Temp_time'])
