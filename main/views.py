@@ -15,9 +15,6 @@ import time
 from datetime import timezone
 #from django.views.decorators.http import require_http_methods
 
-
-
-
 def index(request):
 #	print('request: '+str(request.body))
 	return render(request,'main/index.html')
@@ -137,7 +134,6 @@ def graf_t(request,mac_id):
 	k=''
 	x=[]
 	y=[]
-
 	for i in mac:
 		x.append(i.Time_t.timestamp())
 		y.append(i.Value_t)
@@ -147,7 +143,9 @@ def graf_t(request,mac_id):
 	dlin=len(x)
 	print(x)
 	print('asd: ',y)
-	return render(request, 'main/graf.html', {'time':time, 'value':value, 'k':k, 'x':x, 'y':y, 'dlin':dlin})
+	posle_zap = 2
+	ed_izmer='°C'
+	return render(request, 'main/graf.html', {'time':time, 'value':value, 'k':k, 'x':x, 'y':y, 'dlin':dlin, 'posle_zap':posle_zap, 'ed_izmer':ed_izmer})
 
 def graf_mem(request,mac_id):
 	mac = data_esp_mem.objects.filter(mac_adr=mac_id).order_by('Time_mem')
@@ -155,7 +153,21 @@ def graf_mem(request,mac_id):
 	time=[i.Time_mem.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
 	value=[i.Value_mem for i in mac]
 	mac_name = mac[0].mac_adr
-	return render(request, 'main/graf.html', {'time':time, 'value':value})
+	posle_zap=2
+	ed_izmer='м/сек2'
+	k = ''
+	x = []
+	y = []
+	for i in mac:
+		x.append(i.Time_mem.timestamp())
+		y.append(i.Value_mem)
+		k = k + '{' + str(i.Time_mem.timestamp()) + ',' + str(i.Value_mem) + '}'
+		if i != mac[len(mac) - 1]:
+			k = k + ','
+	dlin = len(x)
+	print(x)
+	print('asd: ', y)
+	return render(request, 'main/graf.html', {'time':time, 'value':value, 'k':k, 'x':x, 'y':y, 'dlin':dlin, 'posle_zap':posle_zap, 'ed_izmer':ed_izmer})
 
 
 #######################
