@@ -92,8 +92,8 @@ Graff
             name: 'Temperature',
             data: arr,//[[1575121202000,9],[1575121212000,15],[1575121222000,2],[1575121232000,11]],
             tooltip: {
-                valueDecimals: '{{ posle_zap }}',
-                valueSuffix: '{{ ed_izmer }}'
+                valueDecimals: '{{ posle_zap|escapejs }}',
+                valueSuffix: '{{ ed_izmer|escapejs }}'
             }
         }]
 
