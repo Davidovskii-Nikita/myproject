@@ -17,5 +17,4 @@ urlpatterns = [
 	path('number_mac_mem/<int:mac_id>/', views.mac_rub_mem),
 	path('gt<int:mac_id>',views.graf_t),
 	path('gmem<int:mac_id>',views.graf_mem),
-	path('vib',views.vib),
 ]
