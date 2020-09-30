@@ -18,7 +18,8 @@ import datetime
 
 def index(request):
 #	print('request: '+str(request.body))
-	var=data_esp_mem.objects.filter(mac_adr=8).order_by(' return render(request,'main/index.html')
+#	var=data_esp_mem.objects.filter(mac_adr=8).order_by(' 
+	return render(request,'main/index.html')
 
 @api_view(["GET","POST"])
 def nkvm(request):
@@ -44,12 +45,12 @@ def nkvm(request):
 	if mac_prob==t[1]:
 		for i in range(lengs_t):
 			cur.execute(
-				'INSERT INTO main_data_esp_t (mac_adr_id,"Value_t","Time_t") VALUES ((SELECT id FROM main_mac_adr WHERE "name"=%s), %s, %s)',(k['MAC'],k['Temp'][i],k['Temp_time'][i])
+				'INSERT INTO main_data_esp_t (mac_adr_id,"Value_t","Time_t") VALUES ((SELECT id FROM main_mac_adr WHERE "name"=%s), %s, %s)',(k['MAC'],k['Temp'][i],datetime.datetime.utcfromtimestamp(int(k['Temp_time'][i])))
 				)
 			conn.commit()
 		for i in range(lengs_mem):
 			cur.execute(
-				'INSERT INTO main_data_esp_mem (mac_adr_id,"Value_mem","Time_mem") VALUES ((SELECT id FROM main_mac_adr WHERE "name"=%s), %s, %s)',(k['MAC'],k['Axel'][i],k['Axel_time'][i])
+				'INSERT INTO main_data_esp_mem (mac_adr_id,"Value_mem","Time_mem") VALUES ((SELECT id FROM main_mac_adr WHERE "name"=%s), %s, %s)',(k['MAC'],k['Axel'][i],datetime.datetime.utcfromtimestamp(int(k['Axel_time'][i])))
 				)
 			conn.commit()
 		conn.close()
@@ -133,7 +134,19 @@ def graf_t(request,mac_id):
 	time=[i.Time_t.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
 	value=[i.Value_t for i in mac]
 	mac_name = mac[0].mac_adr
-	return render(request, 'main/graf.html', {'time':time, 'value':value})
+	k=''
+	x=[]
+	y=[]
+	for i in mac:
+		x.append(i.Time_t.timestamp())
+		y.append(i.Value_t)
+		k=k+'{'+str(i.Time_t.timestamp())+','+str(i.Value_t)+'}'
+		if i!= mac[len(mac)-1]:
+			k=k+','
+	dlin=len(x)
+	print(x)
+	print('asd: ',y)
+	return render(request, 'main/graf.html', {'time':time, 'value':value, 'k':k, 'x':x, 'y':y, 'dlin':dlin})
 
 def graf_mem(request,mac_id):
 	mac = data_esp_mem.objects.filter(mac_adr=mac_id).order_by('Time_mem')
@@ -141,7 +154,19 @@ def graf_mem(request,mac_id):
 	time=[i.Time_mem.strftime("%m.%d.%Y %H:%M:%S") for i in mac]
 	value=[i.Value_mem for i in mac]
 	mac_name = mac[0].mac_adr
-	return render(request, 'main/graf.html', {'time':time, 'value':value})
+	k = ''
+	x = []
+	y = []
+	for i in mac:
+		x.append(i.Time_mem.timestamp())
+		y.append(i.Value_mem)
+		k = k + '{' + str(i.Time_mem.timestamp()) + ',' + str(i.Value_mem) + '}'
+		if i != mac[len(mac) - 1]:
+			k = k + ','
+	dlin = len(x)
+	print(x)
+	print('asd: ', y)
+	return render(request, 'main/graf.html', {'time':time, 'value':value, 'k':k, 'x':x, 'y':y, 'dlin':dlin})
 
 
 #######################
