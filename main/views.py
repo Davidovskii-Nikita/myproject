@@ -19,10 +19,9 @@ def nkvm(request):
 	k=json.loads(request.body)
 	print(k)
 	mac_prob=k['MAC']
-	print('123:',type(k['Temp_time'][0]))
-	conn = psycopg2.connect(dbname='myproject',
-   		user='myprojectuser',
-    	password='password',
+	conn = psycopg2.connect(dbname='postgres',
+   		user='postgres',
+    	password='admin',
 	   	host='localhost')
 	cur = conn.cursor()
 	lengs_t=len(k['Temp_time'])
@@ -40,7 +39,7 @@ def nkvm(request):
 		for i in range(lengs_mem):
 			cur.execute(
 				'INSERT INTO main_data_esp_mem (mac_adr_id,"Value_mem","Time_mem") VALUES ((SELECT id FROM main_mac_adr WHERE "name"=%s), %s, %s)',(k['MAC'],k['Axel'][i],datetime.datetime.utcfromtimestamp(int(k['Axel_time'][i]))
-				)
+				))
 			conn.commit()
 		conn.close()
 	return HttpResponse('111')
